@@ -1,0 +1,8 @@
+header{
+  height: 100px;
+  background-color: var(--navbar-footer-color);
+  z-index: 1;
+}
+.site-logo{
+  font-size: 1.5rem;
+}

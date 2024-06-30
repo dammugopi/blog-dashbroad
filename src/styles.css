@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+@import 'ngx-toastr/toastr';
+
+/* fonts */
+
+:root {
+  --primary-color: #026467;
+  --secondary-color: #c4f5d4;
+  --body-text-color: #202437;
+  --navbar-footer-color: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--body-text-color);
+}
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.shadow-effect {
+  border: none;
+  box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
+}
+
+.bg-secondary-theme{
+  background-color: var(--secondary-color);
+}
+
+.text-theme-primary{
+  color: var(--primary-color);
+}
+
+
+.bg-theme{
+  background-color: var(--primary-color) !important;
+
+}
+ 
+
+.btn-theme{ 
+  height: 45px;
+  border: none;
+  font-size: 0.8rem;
+  background-color: var(--primary-color) !important;
+  width: 15vw;
+}
+
+
+
+
+

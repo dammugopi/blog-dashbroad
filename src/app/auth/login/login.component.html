@@ -1,0 +1,43 @@
+ <div class="container">
+    <div class="row d-flex  justify-content-center">
+      <div class="col-md-5 ">
+        <div class="card p-5 shadow-effect ">
+          <div class="card-body  bg-secondary-theme">
+             
+            <div class="text-center">
+              <h3 class="text-theme-primary"> Login</h3>
+              <p class="mt-2">Please login to your Account to post a new blog post </p>
+            </div>
+            <div >
+
+               <!-- form start -->
+            <form  #loginForm= "ngForm"  (ngSubmit)="onLoginSubmit(loginForm)" >
+              <div class="mb-3  ">
+                <input type="email" class="form-control"  placeholder="Email" name="email"   #Email = "ngModel" ngModel  required  
+                [ngClass]="{'is-invalid': Email.touched && Email.invalid}"  email>
+                <div *ngIf="Email.invalid &&Email.touched ">
+                  <div *ngIf="Email.errors?.['required']" class="alert alert-danger p-2" role="alert">Email is required.</div>
+                  <div *ngIf="Email.errors?.['email']" class="alert alert-danger p-2" role="alert">please Enter valid Email</div>
+                </div>
+               
+              </div>
+              <div class="mb-3">
+                
+                <input type="password" class="form-control "  placeholder="password" autocomplete #Password="ngModel"
+                 name="password" ngModel required
+                 [ngClass]="{'is-invalid': Password.touched && Password.invalid}">
+                 <p class="alert alert-danger " *ngIf="Password.touched && Password.invalid"> Password is requried</p>
+              </div>
+               <div class="align-content-center">
+
+                 <button type="submit" class="btn btn-info bg-theme w-100 text-white"  [disabled]="loginForm.invalid">Login</button>
+                </div>
+            </form>
+
+            <!-- form ends -->
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
