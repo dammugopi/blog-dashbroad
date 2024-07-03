@@ -17,7 +17,7 @@ export class NewPostComponent implements OnInit {
   flagValue=true
 
   permalink: string = '';
-  imgSrc: any = './previewimage.jpg';
+  imgSrc: any = './previewimage.png';
   selectedImg: any;
   categories: any;
 
@@ -62,7 +62,8 @@ export class NewPostComponent implements OnInit {
         })
 
       }
-      else{this.flagValue=true,
+      else{
+        this.flagValue=true,
         this.postForm = this.fb.group({
           
           title: ['', [Validators.required, Validators.minLength(10)]],
@@ -113,6 +114,8 @@ export class NewPostComponent implements OnInit {
 
     reader.readAsDataURL($event.target.files[0]);
     this.selectedImg = $event.target.files[0];
+
+
 
   }
 

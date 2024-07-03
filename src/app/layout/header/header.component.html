@@ -1,7 +1,7 @@
-<header class="navbar navbar-expand-lg fixed-top ">
+<header class="navbar navbar-expand-lg fixed-top d-flex justify-content-between">
 
-  <div class="container justify-content-between">
-    <a  routerLink="/" class="site-logo " > Kode<span class="text-black">Web</span></a>
+  <div class="container ">
+    <a  routerLink="/" class="site-logo text-decoration-none " > <img src="headerlogo1.png" alt="Logo" class="">&nbsp;&nbsp; Kode<span class="text-black mt-5">Web</span></a>
   </div>
   <div class="container justify-content-end" *ngIf="isLoggedIn$ | async">
     <a href="#" class=" me-3" > {{userEmail}}</a>

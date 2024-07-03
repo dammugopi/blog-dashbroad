@@ -21,7 +21,7 @@ export class SubscribersComponent {
   }
   deleteSubscriber( id:any) {
 
-    this.subService.deleteSubscriber(id);
+    this.subService.deleteSubscriber(id); 
     
 
 
