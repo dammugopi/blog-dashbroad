@@ -53,7 +53,7 @@
                   <button *ngIf="!post.data.isFeatured"  class="btn btn-group-sm btn-success ms-2"  (click)="onFeatured(post.id,true)" > Marked 
                      Feature
                   </button>
-                  <button *ngIf="post.data.isFeatured"    class="btn btn-sm btn-info ms-2 "  (click)="onFeatured(post.id,false)" > Remove Feature</button>
+                  <button *ngIf="post.data.isFeatured"    class="btn btn-sm btn-info ms-2 " style="background-color: red;" (click)="onFeatured(post.id,false)" > Remove Feature</button>
                 </td>
               </tr>
             </tbody>
